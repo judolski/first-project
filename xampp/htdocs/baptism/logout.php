@@ -1,0 +1,10 @@
+<?php
+session_start();
+if(isset($_SESSION['username'])){
+session_destroy();
+header("location:adminlogin.php");
+}
+if(isset($_SESSION['uname'])){
+session_destroy();
+header("location:home.php");
+}
